@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api"; // Deploy hone ke baad update karna
+const API_BASE = "https://my-api-playgrounds.onrender.com/api"; // Deploy link
 
 // Load profile
 async function loadProfile() {
