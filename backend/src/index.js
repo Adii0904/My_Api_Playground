@@ -7,7 +7,18 @@ const { PORT, MONGODB_URI, CORS_ORIGIN } = require("./config");
 const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
+
 app.use(cors({ origin: CORS_ORIGIN.split(",") }));
+
+app.use(cors({
+  origin: [
+    "http://127.0.0.1:5500",   // local testing
+    "http://localhost:5500",   // alternate local
+    "https://myapiplayground.netlify.app" // deployed frontend
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 // Routes
 app.use("/api", require("./routes/health"));
