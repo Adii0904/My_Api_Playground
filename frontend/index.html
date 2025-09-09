@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Me API Playground</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Me-API Playground</h1>
+
+      <!-- Profile Section -->
+      <section id="profile">
+        <h2>My Profile</h2>
+        <div id="profileData">Loading...</div>
+      </section>
+
+      <!-- Search Section -->
+      <section id="search">
+        <h2>Search Projects</h2>
+        <input
+          required:true
+          type="text"
+          id="searchInput"
+          placeholder="Search by keyword..."
+        />
+        <button onclick="searchProjects()">Search</button>
+      </section>
+
+      <!-- Filter by Skill -->
+      <section id="filter">
+        <h2>Filter by Skill</h2>
+        <input
+          required:true
+          type="text"
+          id="skillInput"
+          placeholder="Enter skill (e.g. React)"
+        />
+        <button onclick="filterBySkill()">Filter</button>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="projectsList">Loading...</div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
