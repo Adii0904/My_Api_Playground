@@ -5,7 +5,7 @@ This application provides a backend API for managing profile & project data and 
 
 ✨ Features
 
-Profile Management → Add and fetch personal information.
+Profile Management → fetch personal information.
 
 Projects Showcase → Store project details with GitHub & Live links.
 
